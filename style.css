@@ -89,3 +89,157 @@ h2{
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
 }
+
+#hobby-img{
+    display: block;
+    width: 50%;
+}
+.about-container{
+    width: 100%;
+  display: flex;
+    height: 70vh;
+ background: lightgrey;
+    
+}
+
+.about-heading{
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+   
+}
+
+.about-heading p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    line-height: 3;
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.about-heading h1{
+   margin-left: 25%;
+    margin-top: 5%;
+ 
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding-top: 30px;
+}
+
+form {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid black;
+    background: white;
+  }
+  
+  form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #d88771;
+    color: white;
+  }
+  .todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .todo li {
+    flex: 1;
+  }
+  .trash-btn,
+  .complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background: rgb(73, 204, 73);
+  }
+  .todo-item {
+    padding: 0rem 0.5rem;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  .fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+  }
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease all;
+  }
+  .select:hover::after {
+    background: white;
+    color: #ff6f47;
+  }
